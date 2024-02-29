@@ -2,7 +2,7 @@
 
     count = var.vm_count
     project = var.project
-    name         = "${var.instance_name}_${count.index + 1}"
+    name         = "${var.instance_name}-${count.index + 1}"
     zone         = "${var.instance_zone}"
     machine_type = "${var.instance_type}"
     boot_disk {
